@@ -86,3 +86,4 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.swapfile = false
 vim.opt.showcmd = true
+vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
