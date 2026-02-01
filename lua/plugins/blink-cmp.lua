@@ -4,6 +4,11 @@ return {
     optional = true,
     dependencies = { "giuxtaposition/blink-cmp-copilot" },
     opts = {
+      keymap = {
+        preset = 'enter',
+        ['<CR>'] = { 'accept', 'fallback' },
+        ['<S-Tab>'] = { 'select_and_accept', 'fallback' },
+      },
       sources = {
         default = { "lsp", "path", "snippets", "buffer", "copilot" },
         providers = {

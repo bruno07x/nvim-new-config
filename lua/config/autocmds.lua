@@ -52,9 +52,7 @@ vim.api.nvim_create_user_command("CopyPath", function()
 end, {})
 
 vim.api.nvim_create_user_command("CopyRelativePath", function()
-  local full_path = vim.fn.expand("%:p")
-  local workspace = "/home/bcouto/.config/nvim/"
-  local rel_path = full_path:sub(#workspace + 1)
+  local rel_path = vim.fn.expand("%:.")
   vim.fn.setreg("+", rel_path)
   print("Copied: " .. rel_path)
 end, {})
