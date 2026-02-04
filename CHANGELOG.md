@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-02-04
+
+### Changed 
+
+- Added plugins
+    - Added plugin git blame.
+
+### Fixed
+
+- Fixed plugin
+    - Fixed plugin jsDoc missing luasnip.
+
 ## [0.5.0] - 2026-02-01
 
 ### Changed 
@@ -14,6 +26,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Changed plugins
     - Changed plugin auto completion blink-cmp to work with enter and S-tab.
     - Changed plugin Debugprint.
+
+### Fixed
+
 - Fixed configs
     - Fixed CopyRelativePath function to actually copy the path to clipboard.
 
