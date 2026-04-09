@@ -10,7 +10,9 @@ return {
                 plain_below = "<leader>dt",
             },
         },
-        print_tag = "DEBUGPRINT➡️",
+        print_tag = "➡️",
+        display_location = false,
+        display_counter = false
     },
     dependencies = {
         "nvim-mini/mini.nvim", -- Needed for :ToggleCommentDebugPrints (not needed for NeoVim 0.10+)
