@@ -10,7 +10,7 @@ return {
                 plain_below = "<leader>dt",
             },
         },
-        print_tag = "➡️",
+        print_tag = "DEBUG:📝",
         display_location = false,
         display_counter = false
     },

@@ -5,9 +5,9 @@ return {
   event = "BufReadPost",
   opts = {
     suggestion = {
-      enabled = not vim.g.ai_cmp,
-      auto_trigger = true,
-      hide_during_completion = vim.g.ai_cmp,
+      enabled = false,
+      -- auto_trigger = true,
+      -- hide_during_completion = vim.g.ai_cmp,
       keymap = {
         accept = false, -- handled by nvim-cmp / blink.cmp
         next = "<M-]>",
@@ -20,4 +20,9 @@ return {
       help = true,
     },
   },
+  config = function(_, opts)
+    require("copilot").setup(opts)
+    -- Disable Copilot by default (can be toggled with your <leader>ce / <leader>cd keymaps)
+    vim.cmd("Copilot disable")
+  end,
 }

@@ -13,5 +13,9 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 - fzf-lua [here](https://github.com/junegunn/fzf)
 - ripgrep [here](https://github.com/BurntSushi/ripgrep)
 - fd [here](https://github.com/sharkdp/fd)
+- install luarocks
+    ```bash
+    sudo apt install luarocks
+    ```
 - node >= 22.22
 

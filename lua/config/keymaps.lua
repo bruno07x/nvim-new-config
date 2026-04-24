@@ -96,7 +96,7 @@ vim.api.nvim_set_keymap("n", "<Leader>j", ":Neogen<CR>", { desc = "Generate [J]s
 
 -- Copilot --
 -- Disable auto-suggestions
-vim.g.copilot_enabled = false
+-- vim.g.copilot_enabled = false
 -- Toggle Copilot on/off
 vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>", { desc = "Enable Copilot", silent = true })
 vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>", { desc = "Disable Copilot", silent = true })
