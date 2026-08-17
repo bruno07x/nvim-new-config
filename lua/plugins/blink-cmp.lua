@@ -2,7 +2,6 @@ return {
   {
     "saghen/blink.cmp",
     optional = true,
-    dependencies = { "giuxtaposition/blink-cmp-copilot" },
     opts = {
       keymap = {
         preset = "default",
@@ -20,15 +19,7 @@ return {
         },
       },
       sources = {
-        default = { "lsp", "path", "snippets", "buffer", "copilot" },
-        providers = {
-          copilot = {
-            name = "copilot",
-            module = "blink-cmp-copilot",
-            score_offset = 100,
-            async = true,
-          },
-        },
+        default = { "lsp", "path", "snippets", "buffer" },
       },
     },
   },

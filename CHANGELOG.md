@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-08-17
+
+### Added
+
+- Added Codex integration with popup access through `<leader>cc` and `<Leader>gp`.
+
+### Changed
+
+- Migrated the AI coding assistant from GitHub Copilot to Codex.
+
+### Removed
+
+- Removed GitHub Copilot and Copilot Chat plugins.
+- Removed the Copilot provider from Blink completion and obsolete Copilot keymaps.
+
 ## [0.6.0] - 2026-02-04
 
 ### Changed 

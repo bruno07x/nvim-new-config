@@ -94,35 +94,9 @@ vim.keymap.set("x", "/", "<Esc>/\\%V", { desc = "Search in visual selection" })
 -- JS Doc --
 vim.api.nvim_set_keymap("n", "<Leader>j", ":Neogen<CR>", { desc = "Generate [J]sDoc", noremap = true, silent = true })
 
--- Copilot --
--- Disable auto-suggestions
--- vim.g.copilot_enabled = false
--- Toggle Copilot on/off
-vim.keymap.set("n", "<leader>ce", ":Copilot enable<CR>", { desc = "Enable Copilot", silent = true })
-vim.keymap.set("n", "<leader>cd", ":Copilot disable<CR>", { desc = "Disable Copilot", silent = true })
--- vim.g.copilot_no_tab_map = true
--- vim.keymap.set('i', '<S-Tab>', ':copilot#Accept("\\<S-Tab>")', { expr = true, replace_keycodes = false })
 vim.api.nvim_set_keymap(
   "n",
   "<Leader>gp",
-  ":CopilotChatToggle<CR>",
-  { desc = "[G]it Co[P]ilot Chat", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<Leader>gs",
-  ":CopilotChatPrompts<CR>",
-  { desc = "[G]it Copilot [S]uggest", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<Leader>gr",
-  ":CopilotChatReset<CR>",
-  { desc = "[G]it Copilot [R]eset", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<Leader>gm",
-  ":CopilotChatModels<CR>",
-  { desc = "[G]it Copilot [M]odels", noremap = true, silent = true }
+  ":CodexToggle<CR>",
+  { desc = "Codex Chat", noremap = true, silent = true }
 )
