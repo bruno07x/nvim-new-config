@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Switched the default colorscheme to Tokyo Night Day and aligned its palette with the Windows Terminal "Tokyo Night Light" scheme.
+- Added Prettierd formatter mappings for JSON, JSONC, JSON5, and JSON Lines files.
+
 ## [0.7.0] - 2026-08-17
 
 ### Added
